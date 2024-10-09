@@ -5,7 +5,7 @@
 const postEl =document.querySelector('#posts');
 const API_URL = "https://bkpybdqjxmrgxwaqmxqe.supabase.co/rest/v1"
 const API_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJrcHliZHFqeG1yZ3h3YXFteHFlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTA0MjU5MTgsImV4cCI6MjAyNjAwMTkxOH0.1kLMTU1ZYusSamYBWHqs--GDYU-NGeYrX7qy4bNLTZU"
- 
+
  fetch(`${API_URL}/f24_posts?select=*&apikey=${API_KEY}`)
 .then(reponse=> response.json())
 .then(data => {
