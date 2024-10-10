@@ -13,22 +13,20 @@ const postEl = document.querySelector('#posts');
 function showPostsWebView(item = {})
 {
      console.log("works")
-    // const div = document .createElement('div');
-  //   div.innerHTML = `
-  //   <div class ="card bg-base-200 shadow-x1">
-  //       <div class="card-body">
-  //       <h3 class ="text-gray-800">Published on:
-  //   ${item['pulishedOn']} by ${item['publishedBy']}</p>
-  //           <p>${item['content']}</p>
-  //           <div class="card-action justify-end">
-  //           <botton class="btn btn-promary">Read
-  // More</button>
-  //                    </div>
-  //                </div>
-  //           </div>
-  //
-  //   `
-  //   postEl.appendChild(div);
+    const div = document .createElement('div');
+    div.innerHTML = `
+        <div class ="card bg-base-200 shadow-x3">
+            <div class="card-body">
+            <h3 class ="text-red-0">Published on:${item['pulishedOn']} by ${item['publishedBy']}</p>
+                <p>${item['content']}</p>
+                <div class="card-action justify-end">
+                <botton class="btn btn-promary">Read More</button>
+                     </div>
+                 </div>
+            </div>
+
+    `
+    postEl.appendChild(div);
 }
 
  // document.querySelector('#app').innerHTML = `
